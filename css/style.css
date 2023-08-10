@@ -1,0 +1,132 @@
+
+p {
+  margin: 0;
+  padding: 0;
+  border: 4px solid transparent;
+  border-radius: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px;
+  background: linear-gradient(gold, #0057b8) padding-box,
+  linear-gradient(180deg,#0057b8,#0057b8 50%,gold 0,gold) border-box;
+}
+
+.main-container {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+ .label {
+  display: block;
+  font-size: 14px;
+  color: black;
+}
+
+.main-container .container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 360px;
+   border: 4px solid transparent;
+  border-radius: 4px;
+   background: linear-gradient(white, white) padding-box,
+  linear-gradient(180deg,#0057b8,#0057b8 50%,gold 0,gold) border-box;
+}
+.nameapp{
+  margin-bottom: 20px;
+}
+.button {
+
+  text-decoration: none;
+  border: 2px solid #bfe2ff;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 12px 30px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #0057b8, #0057b8 50%, gold 0, gold);
+  transition: box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+.button:not(:last-child){
+  margin-bottom: 16px;
+}
+.button:hover,
+.button:active,
+.button:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    -45deg,
+    transparent,
+    rgba(191, 226, 255, 0.3),
+    transparent
+  );
+  transition: left 0.7s;
+}
+.button:hover:before,
+.button:active:before,
+.button:focus:before {
+  left: 100%;
+}
+
+.list {
+  border: 4px solid transparent;
+  border-radius: 4px;
+   background: linear-gradient(white, white) padding-box,
+  linear-gradient(180deg,#0057b8,#0057b8 50%,gold 0,gold) border-box;
+  
+}
+
+.item-list{
+  margin: 0;
+  padding: 0;
+  padding: 8px;
+  list-style: none;
+}
+.item-list > li{
+  margin-bottom: 8px;
+}
+  
+.selected {
+  background: #cecece;
+}
+@media (max-width: 600px) {
+  .input {
+    width: 200px;
+  }
+
+  .button {
+    width: 60px;
+    height: 50px;
+  }
+
+  .list {
+    min-height: 200px;
+  }
+}
+

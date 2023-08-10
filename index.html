@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Klason Test</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <p>Klason Test</p>
+      <div>
+        <label for="pair" class="label">Name/Value Pair</label>
+        <div class="nameapp container">
+          <input
+            type="text"
+            name="pair"
+            id="pair"
+            placeholder="Name=Value"
+            autocomplete="off"
+            class="new-name input"
+            required
+          />
+        </div>
+
+        <div>
+          <label class="label">Name/Value Pair List</label>
+        </div>
+
+        <div class="container">
+          <div class="input list">
+            <ul class="item-list"></ul>
+          </div>
+
+          <div class="buttons">
+            <button class="add button">Add</button>
+            <button class="sort-name button">Sort by Name</button>
+            <button class="sort-value button">Sort by Value</button>
+            <button class="delete button">Delete</button>
+            <button class="show-xml button">Show XML</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
